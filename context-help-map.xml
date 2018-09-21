@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+   <appContext helpID="preface-online" path="common/preface-online.html"/>
+   <appContext helpID="part_excel" path="part_excel.html"/>
+   <appContext helpID="intro" path="intro/intro.html"/>
+   <appContext helpID="intro_over" path="intro/intro_over.html"/>
+   <appContext helpID="intro_excel_start" path="intro/intro_excel_start.html"/>
+   <appContext helpID="intro_excel_close" path="intro/intro_excel_close.html"/>
+   <appContext helpID="intro_excel_window" path="intro/intro_excel_window.html"/>
+   <appContext helpID="intro_document_new" path="intro/intro_document_new.html"/>
+   <appContext helpID="intro_document_open" path="intro/intro_document_open.html"/>
+   <appContext helpID="intro_document_save" path="intro/intro_document_save.html"/>
+   <appContext helpID="intro_document_saveas" path="intro/intro_document_saveas.html"/>
+   <appContext helpID="intro_excel_fileformats" path="intro/intro_excel_fileformats.html"/>
+   <appContext helpID="worksheet" path="worksheets/worksheet.html"/>
+   <appContext helpID="worksheet_over" path="worksheets/worksheet_over.html"/>
+   <appContext helpID="worksheet_activate" path="worksheets/worksheet_activate.html"/>
+   <appContext helpID="worksheet_new" path="worksheets/worksheet_new.html"/>
+   <appContext helpID="worksheet_delete" path="worksheets/worksheet_delete.html"/>
+   <appContext helpID="worksheet_rename" path="worksheets/worksheet_rename.html"/>
+   <appContext helpID="worksheet_copy" path="worksheets/worksheet_copy.html"/>
+   <appContext helpID="worksheet_mouseselections"
+               path="worksheets/worksheet_mouseselections.html"/>
+   <appContext helpID="worksheet_cell" path="worksheets/worksheet_cell.html"/>
+   <appContext helpID="worksheet_print" path="worksheets/worksheet_print.html"/>
+   <appContext helpID="worksheet_print_preview" path="worksheets/worksheet_print_preview.html"/>
+   <appContext helpID="worksheet_page_layout" path="worksheets/worksheet_page_layout.html"/>
+   <appContext helpID="worksheet_page_ends" path="worksheets/worksheet_page_ends.html"/>
+   <appContext helpID="worksheet_cell_movements"
+               path="worksheets/worksheet_cell_movements.html"/>
+   <appContext helpID="data" path="data/data.html"/>
+   <appContext helpID="data_over" path="data/data_over.html"/>
+   <appContext helpID="data_decimal_operator" path="data/data_decimal_separator.html"/>
+   <appContext helpID="data_entry" path="data/data_entry.html"/>
+   <appContext helpID="data_edit" path="data/data_edit.html"/>
+   <appContext helpID="data_undo_changes" path="data/data_undo_changes.html"/>
+   <appContext helpID="data_insert_rowcolumn" path="data/data_insert_rowcolumn.html"/>
+   <appContext helpID="data_copypaste" path="data/data_copypaste.html"/>
+   <appContext helpID="data_autofill" path="data/data_autofill.html"/>
+   <appContext helpID="formatting" path="formatting/formatting.html"/>
+   <appContext helpID="formatting_over" path="formatting/formatting_over.html"/>
+   <appContext helpID="formatting_column_width" path="formatting/formatting_column_width.html"/>
+   <appContext helpID="formatting_row_height" path="formatting/formatting_row_height.html"/>
+   <appContext helpID="formatting_font_group" path="formatting/formatting_font_group.html"/>
+   <appContext helpID="formatting_cell_border" path="formatting/formatting_cell_border.html"/>
+   <appContext helpID="formatting_cell_alignment"
+               path="formatting/formatting_cell_alignment.html"/>
+   <appContext helpID="formatting_cell_numbers" path="formatting/formatting_numbers.html"/>
+   <appContext helpID="formatting_numberformat_task"
+               path="formatting/formatting_numberformat_task.html"/>
+   <appContext helpID="formatting_cell_copy" path="formatting/formatting_cell_copy.html"/>
+   <appContext helpID="formatting_table_style" path="formatting/formatting_table_style.html"/>
+   <appContext helpID="formatting_conditional" path="formatting/formatting_conditional.html"/>
+   <appContext helpID="formatting_conditional_concept"
+               path="formatting/formatting_conditional_concept.html"/>
+   <appContext helpID="formatting_conditional_1_task"
+               path="formatting/formatting_conditional_1_task.html"/>
+   <appContext helpID="formatting_conditional_2_task"
+               path="formatting/formatting_conditional_2_task.html"/>
+   <appContext helpID="formatting_conditional_bottom10pct_task"
+               path="formatting/formatting_conditional_bottom10pct_task.html"/>
+   <appContext helpID="formatting_conditional_delete"
+               path="formatting/formatting_conditional_delete.html"/>
+   <appContext helpID="formatting_conditional_search"
+               path="formatting/formatting_conditional_search.html"/>
+   <appContext helpID="calculation" path="calculations/calculation.html"/>
+   <appContext helpID="calculation_over" path="calculations/calculation_over.html"/>
+   <appContext helpID="calculation_example_sellings"
+               path="calculations/calculation_example_sellings.html"/>
+   <appContext helpID="calculation_example_wages"
+               path="calculations/calculation_example_wages.html"/>
+   <appContext helpID="calculation_model" path="calculations/calculation_model.html"/>
+   <appContext helpID="calculation_formula_copy"
+               path="calculations/calculation_formula_copy.html"/>
+   <appContext helpID="calculation_example_insurance"
+               path="calculations/calculation_example_insurance.html"/>
+   <appContext helpID="calculation_boolean" path="calculations/calculation_boolean.html"/>
+   <appContext helpID="calculation_names_cells"
+               path="calculations/calculation_names_cells.html"/>
+   <appContext helpID="calculation_names_create"
+               path="calculations/calculation_names_create.html"/>
+   <appContext helpID="calculation_names_using"
+               path="calculations/calculation_names_using.html"/>
+   <appContext helpID="calculation_names_manager"
+               path="calculations/calculation_names_manager.html"/>
+   <appContext helpID="calculation_names_list" path="calculations/calculation_names_list.html"/>
+   <appContext helpID="calculation_example_prices"
+               path="calculations/calculation_example_prices.html"/>
+   <appContext helpID="function" path="functions/function.html"/>
+   <appContext helpID="function_over" path="functions/function_over.html"/>
+   <appContext helpID="function_autosum" path="functions/function_autosum.html"/>
+   <appContext helpID="function_enter" path="functions/function_enter.html"/>
+   <appContext helpID="function_math" path="functions/function_math.html"/>
+   <appContext helpID="function_statistical" path="functions/function_statistical.html"/>
+   <appContext helpID="function_datetime" path="functions/function_datetime.html"/>
+   <appContext helpID="function_logical" path="functions/function_logical.html"/>
+   <appContext helpID="function_text" path="functions/function_text.html"/>
+   <appContext helpID="function_nesting" path="functions/function_nesting.html"/>
+   <appContext helpID="function_countif" path="functions/function_countif.html"/>
+   <appContext helpID="function_sumif" path="functions/function_sumif.html"/>
+   <appContext helpID="function_annuity" path="functions/function_annuity.html"/>
+   <appContext helpID="function_nper" path="functions/function_nper.html"/>
+   <appContext helpID="function_vlookup" path="functions/function_vlookup.html"/>
+   <appContext helpID="function_hlookup" path="functions/function_hlookup.html"/>
+   <appContext helpID="function_overview" path="functions/function_overview.html"/>
+   <appContext helpID="function_overview_datetime"
+               path="functions/function_overview_datetime.html"/>
+   <appContext helpID="function_overview_financial"
+               path="functions/function_overview_financial.html"/>
+   <appContext helpID="function_overview_statistical"
+               path="functions/function_overview_statistical.html"/>
+   <appContext helpID="function_overview_text" path="functions/function_overview_text.html"/>
+   <appContext helpID="function_overview_math" path="functions/function_overview_math.html"/>
+   <appContext helpID="function_overview_lookup"
+               path="functions/function_overview_lookup.html"/>
+   <appContext helpID="ex_form001" path="functions/exercises/ex_form001.html"/>
+   <appContext helpID="ex_form002" path="functions/exercises/ex_form002.html"/>
+   <appContext helpID="ex_form003" path="functions/exercises/ex_form003.html"/>
+   <appContext helpID="ex_form004" path="functions/exercises/ex_form004.html"/>
+   <appContext helpID="ex_form005" path="functions/exercises/ex_form005.html"/>
+   <appContext helpID="ex_form006" path="functions/exercises/ex_form006.html"/>
+   <appContext helpID="ex_form007" path="functions/exercises/ex_form007.html"/>
+   <appContext helpID="ex_form008" path="functions/exercises/ex_form008.html"/>
+   <appContext helpID="ex_form009" path="functions/exercises/ex_form009.html"/>
+   <appContext helpID="ex_form010" path="functions/exercises/ex_form010.html"/>
+   <appContext helpID="ex_form011" path="functions/exercises/ex_form011.html"/>
+   <appContext helpID="ex_form012" path="functions/exercises/ex_form012.html"/>
+   <appContext helpID="ex_form013" path="functions/exercises/ex_form013.html"/>
+   <appContext helpID="xls_matr" path="arrays/array.html"/>
+   <appContext helpID="xls_matr_over" path="arrays/array_over.html"/>
+   <appContext helpID="xls_matr_simple" path="arrays/array_simple.html"/>
+   <appContext helpID="xls_matr_single" path="arrays/array_single.html"/>
+   <appContext helpID="xls_matr_complex" path="arrays/array_complex.html"/>
+   <appContext helpID="ex_matr001" path="arrays/exercises/ex_matr001.html"/>
+   <appContext helpID="ex_matr002" path="arrays/exercises/ex_matr002.html"/>
+   <appContext helpID="table" path="tables/table.html"/>
+   <appContext helpID="table_over" path="tables/table_over.html"/>
+   <appContext helpID="table_formbutton" path="tables/table_formbutton.html"/>
+   <appContext helpID="table_data_entry_form" path="tables/table_data_entry_form.html"/>
+   <appContext helpID="table_search_form" path="tables/table_search_form.html"/>
+   <appContext helpID="table_consolidate" path="tables/table_consolidate.html"/>
+   <appContext helpID="table_create" path="tables/table_create.html"/>
+   <appContext helpID="table_operations" path="tables/table_operations.html"/>
+   <appContext helpID="table_sort" path="tables/table_sort.html"/>
+   <appContext helpID="table_filter" path="tables/table_filter.html"/>
+   <appContext helpID="table_calculated_column" path="tables/table_calculated_column.html"/>
+   <appContext helpID="table_totalrow" path="tables/table_totalrow.html"/>
+   <appContext helpID="table_overview" path="tables/table_overview.html"/>
+   <appContext helpID="ex_list001" path="tables/exercises/ex_list001.html"/>
+   <appContext helpID="ex_list002" path="tables/exercises/ex_list002.html"/>
+   <appContext helpID="ex_list003" path="tables/exercises/ex_list003.html"/>
+   <appContext helpID="ex_list004" path="tables/exercises/ex_list004.html"/>
+   <appContext helpID="chart" path="charts/chart.html"/>
+   <appContext helpID="chart_over" path="charts/chart_over.html"/>
+   <appContext helpID="chart_elements" path="charts/chart_elements.html"/>
+   <appContext helpID="chart_create" path="charts/chart_create.html"/>
+   <appContext helpID="chart_operations" path="charts/chart_operations.html"/>
+   <appContext helpID="chart_switch_dataranges" path="charts/chart_switch_dataranges.html"/>
+   <appContext helpID="chart_move" path="charts/chart_move.html"/>
+   <appContext helpID="chart_dimensions" path="charts/chart_dimensions.html"/>
+   <appContext helpID="chart_title" path="charts/chart_title.html"/>
+   <appContext helpID="chart_legend" path="charts/chart_legend.html"/>
+   <appContext helpID="chart_axis_titles" path="charts/chart_axis_titles.html"/>
+   <appContext helpID="chart_data_labels" path="charts/chart_data_labels.html"/>
+   <appContext helpID="chart_gridlines" path="charts/chart_gridlines.html"/>
+   <appContext helpID="chart_area" path="charts/chart_plotarea.html"/>
+   <appContext helpID="chart_data_source" path="charts/chart_data_source.html"/>
+   <appContext helpID="chart_type_change" path="charts/chart_type_change.html"/>
+   <appContext helpID="chart_case" path="charts/chart_case.html"/>
+   <appContext helpID="ex_graf001" path="charts/exercises/ex_graf001.html"/>
+   <appContext helpID="ex_graf002" path="charts/exercises/ex_graf002.html"/>
+   <appContext helpID="ex_graf003" path="charts/exercises/ex_graf003.html"/>
+   <appContext helpID="ex_graf004" path="charts/exercises/ex_graf004.html"/>
+   <appContext helpID="ex_graf005" path="charts/exercises/ex_graf005.html"/>
+   <appContext helpID="ex_graf006" path="charts/exercises/ex_graf006.html"/>
+   <appContext helpID="xls_type" path="charttypes/charttype.html"/>
+   <appContext helpID="xls_type_over" path="charttypes/charttype_over.html"/>
+   <appContext helpID="xls_type_kolom" path="charttypes/charttype_column.html"/>
+   <appContext helpID="xls_type_staaf" path="charttypes/charttype_bar.html"/>
+   <appContext helpID="xls_type_cirkel" path="charttypes/charttype_pie.html"/>
+   <appContext helpID="xls_type_lijn" path="charttypes/charttype_line.html"/>
+   <appContext helpID="xls_type_spreiding" path="charttypes/charttype_scatter.html"/>
+   <appContext helpID="xls_type_lijn_spreiding" path="charttypes/charttype_line_scatter.html"/>
+   <appContext helpID="xls_type_ring" path="charttypes/charttype_doughnut.html"/>
+   <appContext helpID="xls_type_vlak" path="charttypes/charttype_area.html"/>
+   <appContext helpID="xls_type_bellen" path="charttypes/charttype_bubble.html"/>
+   <appContext helpID="xls_type_radar" path="charttypes/charttype_radar.html"/>
+   <appContext helpID="xls_type_vertalingen" path="charttypes/charttype_translations.html"/>
+   <appContext helpID="scen" path="scenarios/scen.html"/>
+   <appContext helpID="scen_over" path="scenarios/scen_over.html"/>
+   <appContext helpID="scen_coffeebar" path="scenarios/scen_coffeebar.html"/>
+   <appContext helpID="ex_scen001" path="scenarios/exercises/ex_scen001.html"/>
+   <appContext helpID="ex_scen002" path="scenarios/exercises/ex_scen002.html"/>
+   <appContext helpID="ex_scen003" path="scenarios/exercises/ex_scen003.html"/>
+   <appContext helpID="ex_scen004" path="scenarios/exercises/ex_scen004.html"/>
+   <appContext helpID="datatable" path="datatables/datatable.html"/>
+   <appContext helpID="datatable_over" path="datatables/datatable_over.html"/>
+   <appContext helpID="datatable_variable_one" path="datatables/datatable_variable_one.html"/>
+   <appContext helpID="datatable_rental_fixed" path="datatables/datatable_rental_fixed.html"/>
+   <appContext helpID="datatable_variable_two" path="datatables/datatable_variable_two.html"/>
+   <appContext helpID="datatable_formulas_multiple"
+               path="datatables/datatable_formulas_multiple.html"/>
+   <appContext helpID="datatable_rental_variable"
+               path="datatables/datatable_rental_variable.html"/>
+   <appContext helpID="datatable_advertising" path="datatables/datatable_advertising.html"/>
+   <appContext helpID="ex_tabl001" path="datatables/exercises/ex_tabl001.html"/>
+   <appContext helpID="ex_tabl002" path="datatables/exercises/ex_tabl002.html"/>
+   <appContext helpID="pivots" path="pivots/pivots.html"/>
+   <appContext helpID="pivots_over" path="pivots/pivots_over.html"/>
+   <appContext helpID="pivots_creating" path="pivots/pivots_creating.html"/>
+   <appContext helpID="pivots_datasources" path="pivots/pivots_datasources.html"/>
+   <appContext helpID="pivots_grouping_data" path="pivots/pivots_grouping_data.html"/>
+   <appContext helpID="pivots_grouping_example" path="pivots/pivots_grouping_example.html"/>
+   <appContext helpID="pivots_filters_slicers" path="pivots/pivots_filters_slicers.html"/>
+   <appContext helpID="pivots_charts" path="pivots/pivots_charts.html"/>
+   <appContext helpID="pivots_options" path="pivots/pivots_options.html"/>
+   <appContext helpID="ex_pivo001" path="pivots/exercises/ex_pivo001.html"/>
+   <appContext helpID="ex_pivo002" path="pivots/exercises/ex_pivo002.html"/>
+   <appContext helpID="ex_pivo003" path="pivots/exercises/ex_pivo003.html"/>
+   <appContext helpID="ex_pivo004" path="pivots/exercises/ex_pivo004.html"/>
+   <appContext helpID="ex_pivo005" path="pivots/exercises/ex_pivo005.html"/>
+   <appContext helpID="ex_pivo006" path="pivots/exercises/ex_pivo006.html"/>
+   <appContext helpID="ex_pivo007" path="pivots/exercises/ex_pivo007.html"/>
+   <appContext helpID="ex_pivo008" path="pivots/exercises/ex_pivo008.html"/>
+   <appContext helpID="ex_pivo009" path="pivots/exercises/ex_pivo009.html"/>
+   <appContext helpID="ex_pivo010" path="pivots/exercises/ex_pivo010.html"/>
+   <appContext helpID="ex_pivo011" path="pivots/exercises/ex_pivo011.html"/>
+   <appContext helpID="ex_pivo012" path="pivots/exercises/ex_pivo012.html"/>
+   <appContext helpID="goalseek" path="goalseek/goalseek.html"/>
+   <appContext helpID="goalseek_over" path="goalseek/goalseek_over.html"/>
+   <appContext helpID="goalseek_stadiumcoffee" path="goalseek/goalseek_stadiumcoffee.html"/>
+   <appContext helpID="goalseek_tips" path="goalseek/goalseek_tips.html"/>
+   <appContext helpID="ex_goal001" path="goalseek/exercises/ex_goal001.html"/>
+   <appContext helpID="ex_goal002" path="goalseek/exercises/ex_goal002.html"/>
+   <appContext helpID="ex_goal003" path="goalseek/exercises/ex_goal003.html"/>
+   <appContext helpID="ex_goal004" path="goalseek/exercises/ex_goal004.html"/>
+   <appContext helpID="solver" path="solver/solver.html"/>
+   <appContext helpID="solver_over" path="solver/solver_over.html"/>
+   <appContext helpID="solver_activation" path="solver/solver_activation.html"/>
+   <appContext helpID="solver_model" path="solver/solver_model.html"/>
+   <appContext helpID="solver_constraints" path="solver/solver_constraints.html"/>
+   <appContext helpID="solver_example_weatherleather"
+               path="solver/solver_example_weatherleather.html"/>
+   <appContext helpID="solver_problems" path="solver/solver_problems.html"/>
+   <appContext helpID="ex_solv001" path="solver/exercises/ex_solv001.html"/>
+   <appContext helpID="ex_solv002" path="solver/exercises/ex_solv002.html"/>
+   <appContext helpID="ex_solv003" path="solver/exercises/ex_solv003.html"/>
+   <appContext helpID="ex_solv004" path="solver/exercises/ex_solv004.html"/>
+   <appContext helpID="ex_solv005" path="solver/exercises/ex_solv005.html"/>
+   <appContext helpID="ex_solv006" path="solver/exercises/ex_solv006.html"/>
+   <appContext helpID="ex_solv007" path="solver/exercises/ex_solv007.html"/>
+   <appContext helpID="ex_solv008" path="solver/exercises/ex_solv008.html"/>
+   <appContext helpID="ex_solv009" path="solver/exercises/ex_solv009.html"/>
+   <appContext helpID="ex_solv010" path="solver/exercises/ex_solv010.html"/>
+   <appContext helpID="macro" path="macro/macro.html"/>
+   <appContext helpID="macro_over" path="macro/macro_over.html"/>
+   <appContext helpID="tab_developer" path="macro/tab_developer.html"/>
+   <appContext helpID="macro_recording" path="macro/macro_recording.html"/>
+   <appContext helpID="macro_cell_format" path="macro/macro_cell_format.html"/>
+   <appContext helpID="macro_editing" path="macro/macro_editing.html"/>
+   <appContext helpID="macro_command_button" path="macro/macro_command_button.html"/>
+   <appContext helpID="macro_security" path="macro/macro_security.html"/>
+   <appContext helpID="macro_tips" path="macro/macro_tips.html"/>
+   <appContext helpID="ex_macr001" path="macro/exercises/ex_macr001.html"/>
+   <appContext helpID="ex_macr002" path="macro/exercises/ex_macr002.html"/>
+   <appContext helpID="ex_macr003" path="macro/exercises/ex_macr003.html"/>
+   <appContext helpID="ex_macr004" path="macro/exercises/ex_macr004.html"/>
+   <appContext helpID="meas" path="measurements/meas.html"/>
+   <appContext helpID="meas_over" path="measurements/meas_over.html"/>
+   <appContext helpID="meas_lineair" path="measurements/meas_linear.html"/>
+   <appContext helpID="meas_trendlijn_lineair" path="measurements/meas_trendline_linear.html"/>
+   <appContext helpID="meas_trendlijn_functies"
+               path="measurements/meas_trendline_functions.html"/>
+   <appContext helpID="ex_meas001" path="measurements/exercises/ex_meas001.html"/>
+   <appContext helpID="ex_meas002" path="measurements/exercises/ex_meas002.html"/>
+   <appContext helpID="ex_meas003" path="measurements/exercises/ex_meas003.html"/>
+   <appContext helpID="ex_meas004" path="measurements/exercises/ex_meas004.html"/>
+   <appContext helpID="part_analysis" path="part_analysis.html"/>
+   <appContext helpID="import" path="import/import.html"/>
+   <appContext helpID="import_over" path="import/import_over.html"/>
+   <appContext helpID="import_csv" path="import/import_csv.html"/>
+   <appContext helpID="import_webdata" path="import/import_webdata.html"/>
+   <appContext helpID="ex_data001" path="import/exercises/ex_data001.html"/>
+   <appContext helpID="forecasts" path="forecasts/forecasts.html"/>
+   <appContext helpID="forecasts_timeserie_introduction"
+               path="forecasts/forecasts_timeserie_introduction.html"/>
+   <appContext helpID="forecasts_timeserie_analyse"
+               path="forecasts/forecasts_timeserie_analyse.html"/>
+   <appContext helpID="forecasts_timeserie_components"
+               path="forecasts/forecasts_timeserie_components.html"/>
+   <appContext helpID="forecasts_timeserie_example"
+               path="forecasts/forecasts_timeserie_example.html"/>
+   <appContext helpID="forecasts_regression" path="forecasts/forecasts_regression.html"/>
+   <appContext helpID="forecasts_trendline_excel"
+               path="forecasts/forecasts_trendline_excel.html"/>
+   <appContext helpID="forecasts_trendline_linear"
+               path="forecasts/forecasts_trendline_linear.html"/>
+   <appContext helpID="forecasts_trendline_logarithmic"
+               path="forecasts/forecasts_trendline_logarithmic.html"/>
+   <appContext helpID="forecasts_trendline_polynomial"
+               path="forecasts/forecasts_trendline_polynomial.html"/>
+   <appContext helpID="forecasts_trendline_power"
+               path="forecasts/forecasts_trendline_power.html"/>
+   <appContext helpID="forecasts_trendline_exponential"
+               path="forecasts/forecasts_trendline_exponential.html"/>
+   <appContext helpID="forecasts_trendline_ma" path="forecasts/forecasts_trendline_ma.html"/>
+   <appContext helpID="forecasts_excel" path="forecasts/forecasts_excel.html"/>
+   <appContext helpID="forecasts_accuracy" path="forecasts/forecasts_accuracy.html"/>
+   <appContext helpID="forecasts_ets" path="forecasts/forecasts_ets.html"/>
+   <appContext helpID="forecasts_forecastsheet" path="forecasts/forecasts_forecastsheet.html"/>
+   <appContext helpID="forecasts_forecastsheet_options"
+               path="forecasts/forecasts_forecastsheet_options.html"/>
+   <appContext helpID="ex_fcast001" path="forecasts/exercises/ex_fcast001.html"/>
+   <appContext helpID="ex_fcast002" path="forecasts/exercises/ex_fcast002.html"/>
+   <appContext helpID="colofon" path="common/colofon.html"/>
+   <appContext helpID="formatting_cell_numbers" path="formatting/formatting_numbers.html"/>
+   <appContext helpID="formatting_numberformat_task"
+               path="formatting/formatting_numberformat_task.html"/>
+   <appContext helpID="function_vlookup" path="functions/function_vlookup.html"/>
+   <appContext helpID="function_hlookup" path="functions/function_hlookup.html"/>
+   <appContext helpID="function_overview_lookup"
+               path="functions/function_overview_lookup.html"/>
+   <appContext helpID="function_annuity" path="functions/function_annuity.html"/>
+   <appContext helpID="function_nper" path="functions/function_nper.html"/>
+   <appContext helpID="function_overview_financial"
+               path="functions/function_overview_financial.html"/>
+   <appContext helpID="function_countif" path="functions/function_countif.html"/>
+   <appContext helpID="function_sumif" path="functions/function_sumif.html"/>
+   <appContext helpID="function_overview_math" path="functions/function_overview_math.html"/>
+   <appContext helpID="table_data_entry_form" path="tables/table_data_entry_form.html"/>
+   <appContext helpID="table_search_form" path="tables/table_search_form.html"/>
+   <appContext helpID="table_formbutton" path="tables/table_formbutton.html"/>
+   <appContext helpID="table_sort" path="tables/table_sort.html"/>
+   <appContext helpID="table_filter" path="tables/table_filter.html"/>
+   <appContext helpID="table_calculated_column" path="tables/table_calculated_column.html"/>
+   <appContext helpID="table_create" path="tables/table_create.html"/>
+   <appContext helpID="table_calculated_column" path="tables/table_calculated_column.html"/>
+   <appContext helpID="xls_type" path="charttypes/charttype.html"/>
+   <appContext helpID="pivots_creating" path="pivots/pivots_creating.html"/>
+   <appContext helpID="pivots_options" path="pivots/pivots_options.html"/>
+   <appContext helpID="solver_problems" path="solver/solver_problems.html"/>
+   <appContext helpID="macro_command_button" path="macro/macro_command_button.html"/>
+   <appContext helpID="macro_editing" path="macro/macro_editing.html"/>
+   <appContext helpID="macro_cell_format" path="macro/macro_cell_format.html"/>
+</map>

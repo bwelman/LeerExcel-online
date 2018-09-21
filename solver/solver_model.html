@@ -1,0 +1,375 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="nl-nl" lang="nl-nl">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta charset="UTF-8" /><meta name="copyright" content="(C) Copyright 2018" /><meta name="DC.rights.owner" content="(C) Copyright 2018" /><meta name="DC.Type" content="concept" /><meta name="description" content="Uitleg over het opzetten van een berekeningsmodel aan de hand van een voorbeeld." /><meta name="indexterms" content="Oplosser, Berekeningsmodel, Beslissingsvariabelen, Doelfunctie, Restricties, Constraints" /><meta name="DC.subject" content="Oplosser, Berekeningsmodel, Beslissingsvariabelen, Doelfunctie, Restricties, Constraints" /><meta name="keywords" content="Oplosser, Berekeningsmodel, Beslissingsvariabelen, Doelfunctie, Restricties, Constraints" /><meta name="DC.Relation" scheme="URI" content="../solver/solver.html" /><meta name="prodname" content="Excel 2016" /><meta name="DC.Creator" content="Ben Welman" /><meta name="DC.Date.Created" content="2017-08-31" /><meta name="DC.Date.Modified" content="2017-08-31" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="solver_model" />        
+      <title>Opzetten berekeningsmodel</title><!--  Generated with Oxygen version 20.1-SNAPSHOT, build number 2018080803.  --><meta name="wh-path2root" content="../" /><meta name="wh-toc-id" content="solver_model-d66e9028" /><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" /><link rel="stylesheet" href="../oxygen-webhelp/lib/bootstrap/css/bootstrap-theme.min.css" /><link rel="stylesheet" href="../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" /><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/topic-page.css?buildId=2018080803" /><script type="text/javascript" src="../oxygen-webhelp/lib/jquery/jquery-3.1.1.min.js"><!----></script><script data-main="../oxygen-webhelp/app/topic-page.js" src="../oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/light.css?buildId=2018080803" /></head>
+
+    <body id="solver_model" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Ga naar de hoofdinhoud</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="https://softwijs.nl/" class=" wh_logo hidden-xs "><img src="../LogoSW.gif" alt="  Leer Excel 2016  Een taakgericht studieboek  " /></a>
+                    <div class=" wh_publication_title "><a href="../index.html"><span class="booktitle">  <span class="ph mainbooktitle">Leer Excel 2016</span>  <span class="ph booktitlealt">Een taakgericht studieboek</span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button" aria-expanded="false" aria-label="Menu wisselen">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu "><ul>
+   <li><span data-tocid="preface-online-d66e271" data-state="leaf" class=" topicref " data-id="preface-online"><span class="title"><a href="../common/preface-online.html">Voorwoord</a></span></span></li>
+   <li class="has-children"><span data-tocid="part_excel-d66e287" data-state="not-ready" class=" topicref " data-id="part_excel"><span class="title"><a href="../part_excel.html">Werken met Excel</a></span></span></li>
+   <li class="has-children"><span data-tocid="part_analysis-d66e10291" data-state="not-ready" class=" topicref " data-id="part_analysis"><span class="title"><a href="../part_analysis.html">Geavanceerde Data-Analyse</a></span></span></li>
+   <li><span data-tocid="colofon-d66e11313" data-state="leaf" class=" topicref " data-id="colofon"><span class="title"><a href="../common/colofon.html">Colofon</a></span></span></li>
+</ul></nav>
+                <div class=" wh_indexterms_link "><a href="../indexTerms.html" title="Index" aria-label="Ga naar pagina met indextermen"><span>Index</span></a></div>
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="../search.html"><div><input type="search" placeholder="Zoek " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Zoekopdracht" /><button type="submit" class="wh_search_button" aria-label="Zoek"><span>Zoek</span></button></div><script><!--
+                                    $(document).ready(function () {
+                                        $('#searchForm').submit(function (e) {
+                                            if ($('.wh_search_textfield').val().length < 1) {
+                                                e.preventDefault();
+                                            }
+                                        });
+                                    });
+                                --></script></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol xmlns:html="http://www.w3.org/1999/xhtml" class="hidden-print"><li><span class="home"><a href="../index.html"><span>Startpagina</span></a></span></li>
+   <li><span class="topicref" data-id="part_excel"><span class="title"><a href="../part_excel.html">Werken met Excel</a></span></span></li>
+   <li><span class="topicref" data-id="solver"><span class="title"><a href="../solver/solver.html">Oplosser</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+               </span></span></span></li>
+   <li class="active"><span class="topicref" data-id="solver_model"><span class="title"><a href="../solver/solver_model.html">Opzetten berekeningsmodel</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Uitleg over het opzetten van een berekeningsmodel aan de hand van een         voorbeeld.</p>
+               </span></span></span></li>
+</ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  </span></div>
+                        <button class="wh_hide_highlight" aria-label="Zoekmarkeringen wisselen" title="Zoekmarkeringen wisselen"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Secties samenvouwen" title="Secties samenvouwen"></button>
+                        <div class=" wh_print_link print "><button onClick="window.print()" title="Druk deze pagina af" aria-label="Druk deze pagina af"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav role="navigation" id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-3 hidden-xs navbar hidden-print">
+                            <div class=" wh_publication_toc " data-tooltip-position="right"><ul role="tree" aria-label="Table of Contents"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="true"><span data-tocid="part_excel-d66e287" class="topicref" data-id="part_excel" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action part_excel-d66e287-link" class="wh-expand-btn"></span><span class="title"><a href="../part_excel.html" id="part_excel-d66e287-link">Werken met Excel</a></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="false"><span data-tocid="intro-d66e517" class="topicref" data-id="intro" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action intro-d66e517-link" class="wh-expand-btn"></span><span class="title"><a href="../intro/intro.html" id="intro-d66e517-link">Beginnen met Excel</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="worksheet-d66e968" class="topicref" data-id="worksheet" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action worksheet-d66e968-link" class="wh-expand-btn"></span><span class="title"><a href="../worksheets/worksheet.html" id="worksheet-d66e968-link">Het werkblad</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="data-d66e1450" class="topicref" data-id="data" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action data-d66e1450-link" class="wh-expand-btn"></span><span class="title"><a href="../data/data.html" id="data-d66e1450-link">Gegevens invoeren/bewerken</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="formatting-d66e1995" class="topicref" data-id="formatting" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action formatting-d66e1995-link" class="wh-expand-btn"></span><span class="title"><a href="../formatting/formatting.html" id="formatting-d66e1995-link">Opmaak werkblad en gegevens</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="calculation-d66e2600" class="topicref" data-id="calculation" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action calculation-d66e2600-link" class="wh-expand-btn"></span><span class="title"><a href="../calculations/calculation.html" id="calculation-d66e2600-link">Berekeningen opzetten</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="function-d66e3251" class="topicref" data-id="function" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action function-d66e3251-link" class="wh-expand-btn"></span><span class="title"><a href="../functions/function.html" id="function-d66e3251-link">Formules en Functies</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="xls_matr-d66e4241" class="topicref" data-id="xls_matr" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action xls_matr-d66e4241-link" class="wh-expand-btn"></span><span class="title"><a href="../arrays/array.html" id="xls_matr-d66e4241-link">Matrixformules</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="table-d66e4674" class="topicref" data-id="table" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action table-d66e4674-link" class="wh-expand-btn"></span><span class="title"><a href="../tables/table.html" id="table-d66e4674-link">Tabellen</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="chart-d66e5369" class="topicref" data-id="chart" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action chart-d66e5369-link" class="wh-expand-btn"></span><span class="title"><a href="../charts/chart.html" id="chart-d66e5369-link">Grafieken</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="xls_type-d66e6212" class="topicref" data-id="xls_type" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action xls_type-d66e6212-link" class="wh-expand-btn"></span><span class="title"><a href="../charttypes/charttype.html" id="xls_type-d66e6212-link">Grafieksoorten</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="scen-d66e6705" class="topicref" data-id="scen" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action scen-d66e6705-link" class="wh-expand-btn"></span><span class="title"><a href="../scenarios/scen.html" id="scen-d66e6705-link">Scenario's</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="datatable-d66e7149" class="topicref" data-id="datatable" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action datatable-d66e7149-link" class="wh-expand-btn"></span><span class="title"><a href="../datatables/datatable.html" id="datatable-d66e7149-link">Gegevenstabellen</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="pivots-d66e7798" class="topicref" data-id="pivots" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action pivots-d66e7798-link" class="wh-expand-btn"></span><span class="title"><a href="../pivots/pivots.html" id="pivots-d66e7798-link">Draaitabellen</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="goalseek-d66e8528" class="topicref" data-id="goalseek" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action goalseek-d66e8528-link" class="wh-expand-btn"></span><span class="title"><a href="../goalseek/goalseek.html" id="goalseek-d66e8528-link">Doelzoeken</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="true"><span data-tocid="solver-d66e8966" class="topicref" data-id="solver" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action solver-d66e8966-link" class="wh-expand-btn"></span><span class="title"><a href="../solver/solver.html" id="solver-d66e8966-link">Oplosser</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem"><span data-tocid="solver_over-d66e8983" class="topicref" data-id="solver_over" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../solver/solver_over.html" id="solver_over-d66e8983-link">Wat is de <dfn xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="term">Oplosser</dfn>?
+                           </a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Een korte beschrijving van het hulpprogramma <dfn class="term">Oplosser</dfn>.
+                              
+                           </p>
+                           </span></span></span></li>
+               <li role="treeitem"><span data-tocid="solver_activation-d66e9007" class="topicref" data-id="solver_activation" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../solver/solver_activation.html" id="solver_activation-d66e9007-link">Taak: Beschikbaarheid Oplosser</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Dit onderdeel bevat aanwijzingen om te controleren of het onderdeel 			<dfn class="term">Oplosser</dfn> binnen Excel beschikbaar en indien nodig hoe deze beschikbaar 		gesteld kan worden.
+                              
+                           </p>
+                           </span></span></span></li>
+               <li role="treeitem" class="active"><span data-tocid="solver_model-d66e9028" class="topicref" data-id="solver_model" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../solver/solver_model.html" id="solver_model-d66e9028-link">Opzetten berekeningsmodel</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Uitleg over het opzetten van een berekeningsmodel aan de hand van een         voorbeeld.</p>
+                           </span></span></span></li>
+               <li role="treeitem"><span data-tocid="solver_constraints-d66e9046" class="topicref" data-id="solver_constraints" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../solver/solver_constraints.html" id="solver_constraints-d66e9046-link">Randvoorwaarden oplosser</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Enige achtergrondinformatie over het toevoegen van randvoorwaarden in de         Oplosser.</p>
+                           </span></span></span></li>
+               <li role="treeitem"><span data-tocid="solver_example_weatherleather-d66e9064" class="topicref" data-id="solver_example_weatherleather" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../solver/solver_example_weatherleather.html" id="solver_example_weatherleather-d66e9064-link">Taak: Gebruik Oplosser</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Stapsgewijze beschrijving van het gebruik van de Oplosser voor de casus         WeatherLeather.</p>
+                           </span></span></span></li>
+               <li role="treeitem"><span data-tocid="solver_problems-d66e9082" class="topicref" data-id="solver_problems" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../solver/solver_problems.html" id="solver_problems-d66e9082-link">Geen oplossing gevonden. Wat nu?</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Mogelijkheden tot vervolgstappen wanneer de Oplosser geen antwoord kan 		vinden.</p>
+                           </span></span></span></li>
+               <li role="treeitem" aria-expanded="false"><span data-tocid="tocId-d66e9151" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d66e9151-link" class="wh-expand-btn"></span><span class="title"><a href="../solver/exercises/ex_solv001.html" id="tocId-d66e9151-link">Opgaven</a></span></span></li>
+            </ul>
+         </li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="macro-d66e9614" class="topicref" data-id="macro" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action macro-d66e9614-link" class="wh-expand-btn"></span><span class="title"><a href="../macro/macro.html" id="macro-d66e9614-link">Macro's</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="meas-d66e10108" class="topicref" data-id="meas" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action meas-d66e10108-link" class="wh-expand-btn"></span><span class="title"><a href="../measurements/meas.html" id="meas-d66e10108-link">Meetresultaten verwerken</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span></li>
+      </ul>
+   </li>
+</ul></div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-7 col-md-9 col-sm-9 col-xs-12" id="wh_topic_body">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Opzetten berekeningsmodel</h1>
+    
+    
+    <div class="body conbody"><p class="shortdesc">Uitleg over het opzetten van een berekeningsmodel aan de hand van een
+        voorbeeld.</p>
+        <div class="example"><h2 class="title sectiontitle">Casus</h2>
+            
+            <p class="p">WeatherLeather, een fabrikant van dure leren jacks, heeft twee ontwerpen gemaakt voor
+                het nieuwe seizoen, een lang jack en een kort jack. Voor het maken van een kort jack
+                is 1 uur werktijd op de snijafdeling en 3 uur werktijd op de naaiafdeling nodig.
+                Voor een lang jack zijn deze tijden respectievelijk 2 uur en 4 uur. De hoeveelheid
+                werktijd op de snijafdeling en de naaiafdeling is beperkt. De beschikbare capaciteit
+                op de snijafdeling is 32 uur per week en op de naaiafdeling 84 uur per week. De
+                marktvraag naar lange leren jacks is beperkt. Niet meer dan 12 lange leren jacks
+                kunnen per week afgezet worden. Voor de korte jacks geldt dat alle gemaakte jacks
+                verkocht kunnen worden. Er wordt niet op voorraad geproduceerd. De winst op een kort
+                jack is 90 Euro en op een lang jack 144 Euro. Hoeveel jacks van elk type moeten per
+                week gemaakt worden om een zo groot mogelijke winst te krijgen?</p>
+        </div>
+        <section class="section"><h2 class="title sectiontitle">Begrijp het probleem</h2>
+            
+            <p class="p">Deze stap lijkt zo vanzelfsprekend dat het misschien nauwelijks de moeite waard lijkt
+                deze te vermelden. Toch is het van belang om hier bij stil te staan voordat je
+                begint met het formuleren van de doelcel, de veranderende cellen en de restricties.
+                Wanneer je het probleem niet volledig begrijpt loop je de kans op onjuiste
+                formuleringen in het model. De probleemstelling in dit voorbeeld is vrij
+                eenvoudig:</p>
+            <p class="p">Hoeveel korte en lange jacks moet je per week produceren om een maximale winst te
+                krijgen, terwijl je niet meer dan 32 uur snijtijd en 84 uur naaitijd tot je
+                beschikking hebt.</p>
+        </section>
+        <section class="section"><h2 class="title sectiontitle">Beslissingsvariabelen (<dfn class="term">veranderende cellen</dfn>)</h2>
+            
+            <p class="p">Stel de beslissingsvariabelen vast. Dit zijn de variabelen waarvoor je een waarde
+                moet vast stellen die tot het optimale resultaat leiden. In het Excel model worden
+                dit de <dfn class="term">veranderende cellen</dfn>. In dit voorbeeld zijn er twee
+                beslissingsvariabelen welke gemakshalve met een letter worden aangeduid:</p>
+            <ul class="ul">
+                <li class="li">K = aantal korte jacks per week</li>
+                <li class="li">L = aantal lange jacks per week</li>
+            </ul>
+        </section>
+        <section class="section"><h2 class="title sectiontitle">Doelfunctie</h2>
+            
+            <p class="p">Er moet een formule bepaald worden waarvan de uitkomst de optimale waarde moet
+                krijgen. In deze formule komen de beslissingsvariabelen voor. In dit voorbeeld is de
+                doelfunctie de behaalde winst per week en deze hangt af van het aantal geproduceerde
+                korte jacks (K) en lange jacks (L):</p>
+            <p class="p"><code class="ph codeph">Winst = 90*K + 144*L</code> (deze moet gemaximaliseerd worden)</p>
+            <div class="note attention note_attention"><span class="note__title">Waarschuwing:</span> Bij wat ingewikkelder modellen is het soms lastig om het probleem
+                zo te formuleren dat één doelfunctie verkregen wordt. Dan kan het gebeuren dat de
+                beslissingsvariabelen niet rechtstreeks in de doelfunctie voorkomen, maar via een
+                omweg. In de doelfunctie komen dan variabelen voor waarvan de waarden uiteindelijk
+                weer afhangen van de beslissingsvariabelen.</div>
+        </section>
+        <section class="section"><h2 class="title sectiontitle">Restricties</h2>
+            
+            <p class="p">Meestal zijn er beperkingen voor de waarden die de beslissingsvariabelen kunnen
+                aannemen. Deze beperkingen moeten opgespoord en geformuleerd worden. In dit
+                voorbeeld zijn er drie restricties die rechtstreeks uit de casus komen, de beperkte
+                capaciteiten voor de snij- en naaiafdeling en de marktvraag voor de lange jacks.</p>
+            <div class="p">Daarnaast zijn er vaak algemene restricties die te maken hebben met het gegevenstype
+                van de beslissingsvariabelen. Zo moeten in dit voorbeeld de twee
+                beslissingsvariabelen, het aantal geproduceerde jacks, altijd positieve en gehele
+                getallen zijn.<div class="note attention note_attention"><span class="note__title">Waarschuwing:</span> In Excel heet een geheel getal een
+                        <dfn class="term">integer</dfn>.</div></div>
+            <p class="p">Dit alles leidt tot de formulering van de volgende constraints:</p>
+            <ul class="ul">
+                <li class="li">Restrictie snijtijd per week: <code class="ph codeph">1*K + 2*L &lt;= 32</code>.</li>
+                <li class="li">Restrictie naaitijd per week: <code class="ph codeph">3*K + 4*L &lt;= 84</code>.</li>
+                <li class="li">Restrictie marktvraag lange jacks: <code class="ph codeph">L &lt;= 12</code>.</li>
+                <li class="li">Restricties positieve waarden: <code class="ph codeph">K &gt;= 0</code> en <code class="ph codeph">L &gt;=
+                        0</code></li>
+                <li class="li">Restricties gehele waarden: <code class="ph codeph">K = integer</code> en <code class="ph codeph">L =
+                        integer</code></li>
+            </ul>
+        </section>
+        <section class="section"><h2 class="title sectiontitle">Model in Excel</h2>
+            
+            <p class="p">Het model moet nu in Excel worden gebouwd zodat het probleem straks met het
+                hulpprogramma <dfn class="term">Oplosser</dfn> kan worden opgelost. Een manier waarop dat kan
+                is in de volgende afbeelding te zien.</p>
+            <figure class="fig fignone"><figcaption class="figcap"><span class="figtitleprefix">Figuur: </span>Berekeningsmodel WeatherLeather</figcaption>
+                
+                <img class="image" src="images/weatherleather_model.png" alt="Schermafbeelding berekeningsmodel WeatherLeather" />
+            </figure>
+            <p class="p">Er is niet één goede manier om een dergelijk model in Excel te bouwen. Wel zijn er
+                een aantal richtlijnen te geven. Deze richtlijnen worden hierna besproken aan de
+                hand van de voorgaande afbeelding. Je kunt uiteraard het model met behulp van deze
+                aanwijzingen en de afbeelding nabouwen, maar het is ook in het hulpbestand
+                    <span class="ph filepath">WeatherLeather.xlsx</span> beschikbaar.</p>
+            <p class="p">Richtlijnen voor een Oplosser model in Excel:</p>
+            <ol class="ol">
+                <li class="li">Organiseer de gegevens op een logische en overzichtelijke wijze en zet voldoende
+                    toelichtende tekst in de buurt van de cellen met getallen en formules. Een model
+                    wordt later vaak in rapportages gebruikt en dan moet duidelijk zijn wat alles
+                    voorstelt en waar het om draait. Markeer de cellen met de beslissingsvariabelen
+                    (B4 en C4) en de doelfunctie (D5) zodat ze gemakkelijk herkend worden. Zet de
+                    constraints in een afzonderlijk deel.</li>
+                <li class="li">Zet elke beslissingsvariabele in een aparte cel en geef ze een startwaarde. Zo
+                    staat in het voorbeeld het aantal geproduceerde korte en lange jacks in
+                    respectievelijk cel B4 en cel C4. Als startwaarde is in beide gevallen 1
+                    gebruikt. Hierdoor kan in ieder geval de juistheid van de formules gecontroleerd
+                    worden. </li>
+                <li class="li">Maak een formule voor de doelcel. In D5 is de formule
+                        <code class="ph codeph">=B5*B4+C5*C4</code>.</li>
+                <li class="li">Maak voor elke restrictie een formule in een aparte cel en zet in de cel rechts
+                    er van de grenswaarde van de restrictie.<div class="simpletable-container"><table class="simpletable"><colgroup><col style="width:33.33333333333333%" /><col style="width:33.33333333333333%" /><col style="width:33.33333333333333%" /></colgroup><thead><tr class="sthead">
+                            <th class="stentry" id="solver_model__stentry__1">cel</th>
+                            <th class="stentry" id="solver_model__stentry__2">formule</th>
+                            <th class="stentry" id="solver_model__stentry__3">toelichting</th>
+                        </tr></thead><tbody><tr class="strow">
+                            <td class="stentry" headers="solver_model__stentry__1">D8</td>
+                            <td class="stentry" headers="solver_model__stentry__2"><code class="ph codeph">=B8*B4+C8*C4</code></td>
+                            <td class="stentry" headers="solver_model__stentry__3">berekening totale snijtijd</td>
+                        </tr><tr class="strow">
+                            <td class="stentry" headers="solver_model__stentry__1">D9</td>
+                            <td class="stentry" headers="solver_model__stentry__2"><code class="ph codeph">=B9*B4+C9*C4</code></td>
+                            <td class="stentry" headers="solver_model__stentry__3">berekening totale naaitijd</td>
+                        </tr><tr class="strow">
+                            <td class="stentry" headers="solver_model__stentry__1">D10</td>
+                            <td class="stentry" headers="solver_model__stentry__2"><code class="ph codeph">=C4</code></td>
+                            <td class="stentry" headers="solver_model__stentry__3">aantal lange jacks</td>
+                        </tr></tbody></table></div></li>
+            </ol>
+        </section>
+    </div>
+</article></main></div>
+                        
+                        
+                        
+                    </div>
+                    
+                        <nav role="navigation" id="wh_topic_toc" class="col-lg-2 hidden-md hidden-sm hidden-xs navbar hidden-print"> 
+                            <div class=" wh_topic_toc "><div class="wh_topic_label">Op deze pagina</div><ul><li class="section-title"><a href="#" data-tocid="">Casus</a></li><li class="section-item"><li class="section-title"><a href="#" data-tocid="">Begrijp het probleem</a></li></li><li class="section-item"><li class="section-title"><a href="#" data-tocid="">Beslissingsvariabelen (<dfn class="term">veranderende cellen</dfn>)</a></li></li><li class="section-item"><li class="section-title"><a href="#" data-tocid="">Doelfunctie</a></li></li><li class="section-item"><li class="section-title"><a href="#" data-tocid="">Restricties</a></li></li><li class="section-item"><li class="section-title"><a href="#" data-tocid="">Model in Excel</a></li></li></ul></div>
+                        </nav>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container text-center ">
+    
+            Generated by <a class="oxyFooter" href="http://www.oxygenxml.com/xml_webhelp.html" target="_blank">
+            &lt;oXygen/&gt; XML WebHelp
+            </a>
+        
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close glyphicon glyphicon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" />
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        <script src="../oxygen-webhelp/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-1284000-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments)};
+        gtag('js', new Date());
+        
+        gtag('config', 'UA-1284000-2');
+    </script>
+
+    </body>
+</html>

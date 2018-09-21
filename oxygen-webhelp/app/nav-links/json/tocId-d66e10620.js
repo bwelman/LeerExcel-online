@@ -1,0 +1,1 @@
+define({"topics" : [{"title":"Opgave: data001 - Eenvoudig csv bestand importeren","shortdesc":"\n                  <p class=\"shortdesc\">Niveau: 2</p>\n               ","href":"import\/exercises\/ex_data001.html","attributes": {"data-id":"ex_data001",},"menu": {"hasChildren":false,},"tocID":"ex_data001-d66e10621","topics":[]}]});
