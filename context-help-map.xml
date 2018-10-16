@@ -312,6 +312,8 @@
                path="forecasts/forecasts_forecastsheet_options.html"/>
    <appContext helpID="ex_fcast001" path="forecasts/exercises/ex_fcast001.html"/>
    <appContext helpID="ex_fcast002" path="forecasts/exercises/ex_fcast002.html"/>
+   <appContext helpID="tidydata" path="tidydata/tidydata.html"/>
+   <appContext helpID="pivots_unpivoting" path="tidydata/pivots_unpivoting.html"/>
    <appContext helpID="colofon" path="common/colofon.html"/>
    <appContext helpID="formatting_cell_numbers" path="formatting/formatting_numbers.html"/>
    <appContext helpID="formatting_numberformat_task"

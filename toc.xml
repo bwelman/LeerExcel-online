@@ -5082,8 +5082,48 @@
             </topic>
          </topic>
       </topic>
+      <topic href="tidydata/tidydata.html" data-id="tidydata" wh-toc-id="tidydata-d66e11561">
+         <title>Gestructureerde gegevens</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="tidydata"></resourceid>
+            <navtitle class="- topic/navtitle ">Gestructureerde gegevens</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Gestructureerde gegevens</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+            <author class="- topic/author ">Ben Welman</author>
+            <prodinfo class="- topic/prodinfo ">
+               
+               <prodname class="- topic/prodname ">Excel 2016</prodname>
+               
+            </prodinfo>
+         </topicmeta>
+         <topic href="tidydata/pivots_unpivoting.html" data-id="pivots_unpivoting" wh-toc-id="pivots_unpivoting-d66e11578">
+            <title>Taak: Kruistabel / Draaitabel opheffen</title>
+            <shortdesc>
+               <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Gegevens die in de vorm van een kruistabel/draaitabel staan herstructureren door de         draaitabel voor kolommen op te
+                  heffen.
+               </p>
+            </shortdesc>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="pivots_unpivoting"></resourceid>
+               <navtitle class="- topic/navtitle ">Taak: Kruistabel / Draaitabel opheffen</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Taak: Kruistabel / Draaitabel opheffen</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">Gegevens die in de vorm van een kruistabel/draaitabel staan herstructureren door de         draaitabel voor kolommen op te
+                  heffen.
+               </shortdesc>
+               <author class="- topic/author ">Ben Welman</author>
+               <prodinfo class="- topic/prodinfo ">
+                  
+                  <prodname class="- topic/prodname ">Excel 2016</prodname>
+                  
+               </prodinfo>
+            </topicmeta>
+         </topic>
+      </topic>
    </topic>
-   <topic href="common/colofon.html" format="dita" data-id="colofon" wh-toc-id="colofon-d66e11313">
+   <topic href="common/colofon.html" format="dita" data-id="colofon" wh-toc-id="colofon-d66e11600">
       <title>Colofon</title>
       <shortdesc>
          <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
