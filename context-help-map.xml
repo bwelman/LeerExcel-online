@@ -308,6 +308,7 @@
    <appContext helpID="import_over" path="import/import_over.html"/>
    <appContext helpID="import_csv" path="import/import_csv.html"/>
    <appContext helpID="import_webdata" path="import/import_webdata.html"/>
+   <appContext helpID="query_options" path="import/query_options.html"/>
    <appContext helpID="ex_data001" path="import/exercises/ex_data001.html"/>
    <appContext helpID="forecasts" path="forecasts/forecasts.html"/>
    <appContext helpID="forecasts_timeserie_introduction"
@@ -344,7 +345,17 @@
    <appContext helpID="ex_fcast001" path="forecasts/exercises/ex_fcast001.html"/>
    <appContext helpID="ex_fcast002" path="forecasts/exercises/ex_fcast002.html"/>
    <appContext helpID="tidydata" path="tidydata/tidydata.html"/>
-   <appContext helpID="pivots_unpivoting" path="tidydata/pivots_unpivoting.html"/>
+   <appContext helpID="tidydata_over" path="tidydata/tidydata_over.html"/>
+   <appContext helpID="tidydata_headervalues"
+               path="tidydata/tidydata_headervalues.html"/>
+   <appContext helpID="tidydata_combinedvariables"
+               path="tidydata/tidydata_combinedvariables.html"/>
+   <appContext helpID="tidydata_tidydata_rowcolumnvariables"
+               path="tidydata/tidydata_rowcolumnvariables.html"/>
+   <appContext helpID="pivots_unpivoting" path="tidydata/tidydata_benelux.html"/>
+   <appContext helpID="ex_tidy001" path="tidydata/exercises/ex_tidy001.html"/>
+   <appContext helpID="ex_tidy002" path="tidydata/exercises/ex_tidy002.html"/>
+   <appContext helpID="ex_tidy003" path="tidydata/exercises/ex_tidy003.html"/>
    <appContext helpID="colofon" path="common/colofon.html"/>
    <appContext helpID="formatting_cell_numbers"
                path="formatting/formatting_numbers.html"/>

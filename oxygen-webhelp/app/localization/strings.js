@@ -1,5 +1,5 @@
 define(function() {var localization = new Array();
-localization["index.terms.page.title"]="Index Terms";
+localization["index.terms.page.title"]="Index Termen";
 localization["toggle.menu"]="Menu wisselen";
 localization["label.cleditorControls"]="Voeg uw reactie toe. Druk op Alt+S om uw reactie te versturen of Alt+` om deze te verwijderen.";
 localization["label.closeDialog"]="Sluit het dialoogvenster";
