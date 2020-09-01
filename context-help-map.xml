@@ -142,13 +142,6 @@
    <appContext helpID="ex_form011" path="functions/exercises/ex_form011.html"/>
    <appContext helpID="ex_form012" path="functions/exercises/ex_form012.html"/>
    <appContext helpID="ex_form013" path="functions/exercises/ex_form013.html"/>
-   <appContext helpID="xls_matr" path="arrays/array.html"/>
-   <appContext helpID="xls_matr_over" path="arrays/array_over.html"/>
-   <appContext helpID="xls_matr_simple" path="arrays/array_simple.html"/>
-   <appContext helpID="xls_matr_single" path="arrays/array_single.html"/>
-   <appContext helpID="xls_matr_complex" path="arrays/array_complex.html"/>
-   <appContext helpID="ex_matr001" path="arrays/exercises/ex_matr001.html"/>
-   <appContext helpID="ex_matr002" path="arrays/exercises/ex_matr002.html"/>
    <appContext helpID="table" path="tables/table.html"/>
    <appContext helpID="table_over" path="tables/table_over.html"/>
    <appContext helpID="table_formbutton" path="tables/table_formbutton.html"/>
@@ -167,6 +160,32 @@
    <appContext helpID="ex_list002" path="tables/exercises/ex_list002.html"/>
    <appContext helpID="ex_list003" path="tables/exercises/ex_list003.html"/>
    <appContext helpID="ex_list004" path="tables/exercises/ex_list004.html"/>
+   <appContext helpID="array" path="arrays/array.html"/>
+   <appContext helpID="array_over" path="arrays/array_over.html"/>
+   <appContext helpID="array_simple" path="arrays/array_simple.html"/>
+   <appContext helpID="array_single" path="arrays/array_single.html"/>
+   <appContext helpID="array_complex" path="arrays/array_complex.html"/>
+   <appContext helpID="array_unit" path="arrays/array_unit.html"/>
+   <appContext helpID="array_frequency" path="arrays/array_frequency.html"/>
+   <appContext helpID="array_dynamic" path="arrays/array_dynamic.html"/>
+   <appContext helpID="array_randarray" path="arrays/array_randarray.html"/>
+   <appContext helpID="array_filter" path="arrays/array_filter.html"/>
+   <appContext helpID="array_sequence" path="arrays/array_sequence.html"/>
+   <appContext helpID="array_sort" path="arrays/array_sort.html"/>
+   <appContext helpID="array_sortby" path="arrays/array_sortby.html"/>
+   <appContext helpID="array_unique" path="arrays/array_unique.html"/>
+   <appContext helpID="array_tables" path="arrays/array_tables.html"/>
+   <appContext helpID="array_xmatch" path="arrays/array_xmatch.html"/>
+   <appContext helpID="array_xlookup" path="arrays/array_xlookup.html"/>
+   <appContext helpID="array_xlookup_multiplevalues"
+               path="arrays/array_xlookup_multiplevalues.html"/>
+   <appContext helpID="array_xlookup_2way" path="arrays/array_xlookup_2way.html"/>
+   <appContext helpID="ex_matr001" path="arrays/exercises/ex_matr001.html"/>
+   <appContext helpID="ex_matr002" path="arrays/exercises/ex_matr002.html"/>
+   <appContext helpID="ex_matr003" path="arrays/exercises/ex_matr003.html"/>
+   <appContext helpID="ex_matr004" path="arrays/exercises/ex_matr004.html"/>
+   <appContext helpID="ex_matr005" path="arrays/exercises/ex_matr005.html"/>
+   <appContext helpID="ex_matr006" path="arrays/exercises/ex_matr006.html"/>
    <appContext helpID="chart" path="charts/chart.html"/>
    <appContext helpID="chart_over" path="charts/chart_over.html"/>
    <appContext helpID="chart_elements" path="charts/chart_elements.html"/>
