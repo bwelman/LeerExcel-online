@@ -165,8 +165,8 @@
    <appContext helpID="array_simple" path="arrays/array_simple.html"/>
    <appContext helpID="array_single" path="arrays/array_single.html"/>
    <appContext helpID="array_complex" path="arrays/array_complex.html"/>
-   <appContext helpID="array_unit" path="arrays/array_unit.html"/>
    <appContext helpID="array_frequency" path="arrays/array_frequency.html"/>
+   <appContext helpID="array_unit" path="arrays/array_math.html"/>
    <appContext helpID="array_dynamic" path="arrays/array_dynamic.html"/>
    <appContext helpID="array_randarray" path="arrays/array_randarray.html"/>
    <appContext helpID="array_filter" path="arrays/array_filter.html"/>
